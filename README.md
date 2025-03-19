@@ -55,7 +55,7 @@ ZOODiP
 
 4. **Run the Example**
 
-   Execute the main script `run_demo.py`:
+   Execute the main script `train_zoodip.sh`:
 
    ```bash
    sh train_zoodip.sh
@@ -68,12 +68,6 @@ ZOODiP
 If the setup has been correctly configured and the training has been successfully completed, one can obtain images akin to those presented in `./inference.ipynb`.
 
 <img src="pics\output.png" width="700">
-
-## ⚠️ Notes
-
-- **Custom Configurations**: To use custom text prompts and parameters, add a new configuration class in `configs/demo_config.py` and make necessary adjustments in `run_demo.py`.
-- **Parameter Sensitivity**: This method inherits the sensitivity of inference-based optimization techniques, meaning that the generated results are highly dependent on hyperparameter settings. Careful tuning may be required to achieve optimal results.
-- **NLP Models**: When using NLP models like SpaCy for token parsing, ensure the correct language model is installed.
 
 ## 🙏 Acknowledgments
 
