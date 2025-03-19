@@ -46,6 +46,7 @@ ZOODiP
 ```
 
 3. **Configure Parameters**
+
    The implementation is primarily based on the **textual inversion** code from Diffusers, with the following additional parameters:
    - `n`: Number of gradient estimation for ZO optimization.
    - `tau`: Buffer size (see Algorithm. 1).
