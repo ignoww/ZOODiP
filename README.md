@@ -29,23 +29,14 @@ This paper presents a novel approach to enabling personalization with a quantize
 
 2. **Configure Parameters**
 ```md
-packages/button
-├── lib
-│   ├── button.d.ts
-│   ├── button.js
-│   ├── button.js.map
-│   ├── button.stories.d.ts
-│   ├── button.stories.js
-│   ├── button.stories.js.map
-│   ├── index.d.ts
-│   ├── index.js
-│   └── index.js.map
-├── package.json
-├── src
-│   ├── button.stories.tsx
-│   ├── button.tsx
-│   └── index.ts
-└── tsconfig.json
+ZOODiP
+  ├── dataset
+        ├── dreambooth dataset
+        └── or custom dataset
+  ├── cc.json
+  ├── train_zoodip.sh
+  ├── train_zoodip.py
+  └── inference.ipynb
 ```
    Modify the `configs/demo_config.py` file to adjust runtime parameters as needed. This file includes two example configuration classes: `RunConfig1` for object binding and `RunConfig2` for attribute binding. Key parameters are as follows:
 
