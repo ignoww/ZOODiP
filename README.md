@@ -9,6 +9,7 @@
 > 📚[arXiv](https://arxiv.org/abs/2411.07132)
 
 This paper presents a novel approach to enabling personalization with a quantized text-to-image diffusion model while operating under minimal memory constraints and without reliance on backpropagation. Leveraging **zeroth-order(ZO) optimization**, the proposed method achieves personalization using merely **2.37GB** of VRAM on Stable Diffusion v1.5.
+<img src="pics/method.png" width="800">
 
 ## 🚀 Usage
 
@@ -27,6 +28,7 @@ This paper presents a novel approach to enabling personalization with a quantize
 
    Additionally, download dreambooth dataset from [here](https://github.com/google/dreambooth) and put them in `./dataset`:
 
+
 2. **Folder Tree**
 ```md
 ZOODiP
@@ -35,6 +37,8 @@ ZOODiP
   │     └── or custom dataset
   ├── results
   │     └── learned_embeds.safetensors
+  ├── requirements.txt
+  ├── environment.yaml
   ├── cc.json
   ├── train_zoodip.sh
   ├── train_zoodip.py
