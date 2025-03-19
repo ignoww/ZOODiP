@@ -28,6 +28,7 @@ This paper presents a novel approach to enabling personalization with a quantize
    Additionally, download dreambooth dataset from [here](https://github.com/google/dreambooth) and put them in `./dataset`:
 
 2. **Configure Parameters**
+```md
 packages/button
 ├── lib
 │   ├── button.d.ts
@@ -45,6 +46,7 @@ packages/button
 │   ├── button.tsx
 │   └── index.ts
 └── tsconfig.json
+```
    Modify the `configs/demo_config.py` file to adjust runtime parameters as needed. This file includes two example configuration classes: `RunConfig1` for object binding and `RunConfig2` for attribute binding. Key parameters are as follows:
 
    - `prompt`: Text prompt for guiding image generation.
