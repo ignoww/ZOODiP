@@ -46,7 +46,7 @@ ZOODiP
    - `n`: Number of gradient estimation for ZO optimization.
    - `tau`: Buffer size (see Algorithm. 1).
    - `nu`: Threshold that controls the amount of variance retained (see Algorithm. 1).
-   - `use_cc`: Whether to use [comprehensive captioning]("https://arxiv.org/pdf/2402.12004").
+   - `use_cc`: Whether to use [comprehensive captioning](https://arxiv.org/pdf/2402.12004).
 
 4. **Run the Example**
 
