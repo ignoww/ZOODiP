@@ -27,36 +27,36 @@ This paper presents a novel approach to enabling personalization with a quantize
 
    Additionally, download dreambooth dataset from [here](https://github.com/google/dreambooth) and put them in `./dataset`:
 
-2. **Configure Parameters**
+2. **Folder Tree**
 ```md
 ZOODiP
   ├── dataset
-        ├── dreambooth dataset
-        └── or custom dataset
+  │     ├── dreambooth dataset
+  │     └── or custom dataset
+  ├── results
+  │     └── learned_embeds.safetensors
   ├── cc.json
   ├── train_zoodip.sh
   ├── train_zoodip.py
   └── inference.ipynb
 ```
-   Modify the `configs/demo_config.py` file to adjust runtime parameters as needed. This file includes two example configuration classes: `RunConfig1` for object binding and `RunConfig2` for attribute binding. Key parameters are as follows:
 
-   - `prompt`: Text prompt for guiding image generation.
-   - `model_path`: Path to the Stable Diffusion model; set to `None` to download the pretrained model automatically.
-   - `use_nlp`: Whether to use an NLP model for token parsing.
-   - `token_indices`: Indices of tokens to merge.
-   - `prompt_anchor`: Split text prompt.
-   - `prompt_merged`: Text prompt after token merging.
-   - For further parameter details, please refer to the comments in the configuration file and our paper.
+3. **Configure Parameters**
+   The implementation is primarily based on the **textual inversion** code from Diffusers, with the following additional parameters:
+   - `n`: Number of gradient estimation for ZO optimization.
+   - `tau`: Buffer size (see Algorithm. 1).
+   - `nu`: Threshold that controls the amount of variance retained (see Algorithm. 1).
+   - `use_cc`: Whether to use [comprehensive captioning]("https://arxiv.org/pdf/2402.12004").
 
-3. **Run the Example**
+4. **Run the Example**
 
    Execute the main script `run_demo.py`:
 
    ```bash
-   python run_demo.py
+   sh train_zoodip.sh
    ```
 
-   The generated images will be saved in the `demo` directory.
+   The learned embeddings will be saved in the `./results/` directory.
 
 ## 📸 Example Outputs
 
