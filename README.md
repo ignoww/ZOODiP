@@ -67,7 +67,7 @@ ZOODiP
 
 If the setup has been correctly configured and the training has been successfully completed, one can obtain images akin to those presented in `./inference.ipynb`.
 
-<img src="pics\output.png" width="1000">
+<img src="pics\output.png" width="700">
 
 ## ⚠️ Notes
 
