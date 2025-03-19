@@ -1,6 +1,6 @@
 export MODEL_NAME="runwayml/stable-diffusion-v1-5"
 export DATA_DIR="./dataset/dog6"
-export OUTPUT_DIR="./results/512_1e2"
+export OUTPUT_DIR="./results/"
 
 python ./train_zoodip.py \
   --pretrained_model_name_or_path=$MODEL_NAME \
