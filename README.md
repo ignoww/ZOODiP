@@ -4,7 +4,7 @@
 
 > **Efficient Personalization of Quantized Diffusion Model without Backpropagation**
 >
-> [Hoigi Seo*](https://seohoiki3215.github.io), [Wongi Jeong*](https://ignoww.github.io/), [Kyungryeol Lee], [Se Young Chun](https://icl.snu.ac.kr/) (*co-first)
+> [Hoigi Seo*](https://seohoiki3215.github.io), [Wongi Jeong*](https://ignoww.github.io/), Kyungryeol Lee, [Se Young Chun](https://icl.snu.ac.kr/) (*co-first)
 >
 > 📚[arXiv](https://arxiv.org/abs/2411.07132)
 
