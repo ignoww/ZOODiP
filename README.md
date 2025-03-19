@@ -65,9 +65,9 @@ ZOODiP
 
 ## 📸 Example Outputs
 
-If everything is set up correctly, `RunConfig1` and `RunConfig2` should produce the left and right images below, respectively:
+If the setup has been correctly configured and the training has been successfully completed, one can obtain images akin to those presented in `./inference.ipynb`.
 
-<img src="pics\demo.png" width="1000">
+<img src="pics\output.png" width="1000">
 
 ## ⚠️ Notes
 
