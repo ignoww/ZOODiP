@@ -4,11 +4,11 @@
 
 > **Efficient Personalization of Quantized Diffusion Model without Backpropagation**
 >
-> [Hoigi Seo](https://seohoiki3215.github.io)*, [Wongi Jeong](https://ignoww.github.io/)*, Kyungryeol Lee, [Se Young Chun](https://icl.snu.ac.kr/) (*co-first)
+> [Hoigi Seo*](https://seohoiki3215.github.io), [Wongi Jeong*](https://ignoww.github.io/), Kyungryeol Lee, [Se Young Chun](https://icl.snu.ac.kr/) (*co-first)
 >
 > 📚[arXiv](https://arxiv.org/abs/2411.07132)
 
-This paper defines **semantic binding** as the task of associating an object with its attribute (attribute binding) or linking it to related sub-objects (object binding). We propose a novel method called **Token Merging (ToMe)**, which enhances semantic binding by aggregating relevant tokens into a single composite token, aligning the object, its attributes, and sub-objects in the same cross-attention map.
+This paper presents a novel approach to enabling personalization with a quantized text-to-image diffusion model while operating under minimal memory constraints and without reliance on backpropagation. Leveraging **zeroth-order(ZO) optimization**, the proposed method achieves personalization using merely **2.37GB** of VRAM on Stable Diffusion v1.5.
 
 ## 🚀 Usage
 
@@ -18,18 +18,14 @@ This paper defines **semantic binding** as the task of associating an object wit
 
    ```bash
    conda env create -f environment.yaml
-   conda activate tome
+   conda activate zoodip
    ```
    Alternatively, install dependencies via `pip`:
     ```bash
     pip install -r requirements.txt
     ```
 
-   Additionally, download the SpaCy model for syntax parsing:
-
-   ```bash
-   python -m spacy download en_core_web_trf
-   ```
+   Additionally, download dreambooth dataset from [here](https://github.com/google/dreambooth) and put them in `./dataset':
 
 2. **Configure Parameters**
 
