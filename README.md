@@ -8,7 +8,7 @@
 >
 > 📚[arXiv](https://ignoww.github.io/)
 
-This paper presents a novel approach to enabling personalization with a quantized text-to-image diffusion model while operating under minimal memory constraints and without reliance on backpropagation. Leveraging **zeroth-order(ZO) optimization**, the proposed method achieves personalization using merely **2.37GB** of VRAM on Stable Diffusion v1.5.
+This paper presents a novel approach to enabling personalization with a quantized text-to-image diffusion model while operating under minimal memory constraints and without reliance on backpropagation. Leveraging **zeroth-order (ZO) optimization**, the proposed method achieves personalization using merely **2.37GB** of VRAM on Stable Diffusion v1.5.
 <img src="pics/method.png" width="1000">
 
 ## 🚀 Usage
