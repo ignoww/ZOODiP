@@ -6,7 +6,7 @@
 >
 > [Hoigi Seo*](https://seohoiki3215.github.io), [Wongi Jeong*](https://ignoww.github.io/), [Kyungryeol Lee](https://krlee1.github.io/), [Se Young Chun](https://icl.snu.ac.kr/) (*co-first)
 >
-> 📚[arXiv](https://arxiv.org/abs/2503.14868)
+> 📚[arXiv](https://arxiv.org/abs/2503.14868), [Project Page](https://ignoww.github.io/ZOODiP_project)
 
 This paper presents a novel approach to enabling personalization with a quantized text-to-image diffusion model while operating under minimal memory constraints and without reliance on backpropagation. Leveraging **zeroth-order (ZO) optimization**, the proposed method achieves personalization using merely **2.37GB** of VRAM on Stable Diffusion v1.5.
 <img src="pics/method.png" width="1000">
